@@ -1,0 +1,108 @@
+body {
+	/*background-color: #1e1f21;*/
+	color: #878787;
+	font-family: sans-serif;
+	margin: 0px;
+	text-align: center;
+}
+
+.nav-header {
+	/*need to make it a flexbox*/
+	/*need to set flex direction to column*/
+	width: 100%;
+	background-color: #c4dfed;
+	flex-direction: column;
+	display: flex;
+    position: fixed;
+    z-index: 2;
+    height: 7em;
+}
+
+.nav-bar {
+	/* need to set the order of this flex element */
+	order: 3; 
+}
+
+.nav-div {
+    width: 80%;
+    position: relative;
+    
+}
+
+.logo-img {
+	/* need to set the order of this flex element */
+	/*margin: .5em;*/
+    height: 95%;
+	order: 1;
+    position: absolute;
+}
+
+.main-header {
+	/* need to set the order of this flex element */
+	height: 350px;
+	background: url("images/btsheader.png");
+	background-size: cover;
+	order: 2; 
+}
+
+.nav-bar a {
+	color: white;
+	font-size: 1.2em;
+	text-decoration: none;
+	display: block;
+	padding: 5px;
+	margin: 1px;
+	background-color: gray;
+}
+
+.nav-bar a:hover {
+	color: #CCCCCC;
+}
+
+/* hmmm, do we still need this flexbox? */
+.box {
+	justify-content: space-around;
+	margin: auto;
+    display: inline-block;
+}
+
+.card {
+	/*line-height: 1.2em;
+	padding: 20px;
+	width: 100%;
+    padding: 20px;
+    text-align: left;
+   	border-style: solid; 
+    border: 2px solid;
+    border-radius: 5px;
+    border-width: 1px; 
+    margin: 15px;
+    box-shadow: 10px 10px 5px #888888;
+    background-color: #f0f5f5;
+    display: inline-block;*/
+    width: 90%;
+    padding: 20px;
+    text-align: left;
+    border-style: solid;
+    border: 2px solid;
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 15px;
+    box-shadow: 10px 10px 5px #888888;
+    background-color: #f0f5f5;
+    float: left;
+}
+
+p {
+	text-align: justify;
+}
+
+p.introd {
+    text-align: center;
+}
+
+.intro {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
